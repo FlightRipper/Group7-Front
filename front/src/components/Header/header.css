@@ -1,0 +1,13 @@
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    width: auto;
+    padding: 10px 1120px 8px 156px;
+    align-items: center;
+}
+
+.App-logo {
+    width: 60px;
+    height: 12px;
+    flex-shrink: 0;
+}

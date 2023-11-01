@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    --primary-color: #105AB2;
+    --secondary-color: #B4C5E4;
+    font-family: sans-serif;
+}
+
+.App-navbar {
+    display: inline-flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    gap: 100px;
+}
+ 
+.nav-list {
+    list-style: none;
+    margin: auto;
+    display: flex; /* Arrange items horizontally */
+  }
+  
+.nav-item {
+    margin-left: 100px;
+  }
+
+  a, .shop-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+  }
+
+  .menu-item a {
+color: var(--primary-color);
+font-size: 16px;
+font-weight: normal;
+}
+
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .isDropdownVisible .dropdown-menu {
+    display: block;
+  }
+
+
+.techspot-logo {
+    position: absolute;
+    width: 257px;
+    height: 37px;
+    left: 170px;
+}
