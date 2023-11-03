@@ -1,11 +1,15 @@
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.App-Footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 5%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  justify-content: center;
+  align-items: center;
+}

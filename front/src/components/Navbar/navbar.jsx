@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import arrow from "../../Assets/Logo/arrow.svg";
 import TechSpot from "../../Assets/Images/TechSpot-logo.png";
 import "./navbar.css";
+import { Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -15,7 +17,7 @@ const Navbar = () => {
       <img className="techspot-logo" src={TechSpot} alt="website-logo" />
       <ul className="nav-list">
         <li className="nav-item">
-          <a href="/">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li className="nav-item">
           <div className="shop-link" onClick={toggleDropdown}>
@@ -42,10 +44,10 @@ const Navbar = () => {
           <a href="/api/blogs">Blog</a>
         </li>
         <li className="nav-item">
-          <a href="/contact-us">Contact Us</a>
+        <Link to="/contact">Contact Us</Link>
         </li>
         <li className="nav-item">
-          <a href="/api/about-us">About Us</a>
+          <Link to="/about">About Us</Link>
         </li>
       </ul>
     </nav>
