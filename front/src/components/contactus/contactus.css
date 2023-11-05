@@ -1,0 +1,156 @@
+.ContactUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #105AB2;
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../fonts/Sora-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Card {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: 50px auto;
+    margin-right: 450px;
+    margin-top: 150px ;
+}
+
+/************************************************************************/
+
+/* Name */
+  
+.input-name {
+    font-size: 16px;
+    padding: 5px 0;
+    border: none;
+    font-family: 'Sora';
+    font-weight: 1000;
+    border-bottom: 2px solid #ccc;
+    color: #08AEEA;
+    width: 75%;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+  
+.input-name:focus {
+    border-color: #08AEEA;
+    outline: none;
+    color: black;
+    font-family: "Sora";
+}
+  
+.input-name:focus::placeholder{
+    color: transparent;
+}
+
+.input-name:focus + .underline_name {
+    transform: scaleX(1);
+
+}
+
+/************************************************************************/
+
+/* Email */
+.input-email {
+    font-size: 16px;
+    border: none;
+    padding: 5px 0;
+    font-family: 'Sora';
+    font-weight: 1000;
+    border-bottom: 2px solid #ccc;
+    color: #08AEEA;
+    width: 75%;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 100px;
+}
+  
+.input-email:focus {
+    border-color: #08AEEA;
+    outline: none;
+}
+
+.input-email:focus::placeholder{
+    color: transparent;
+}
+  
+.input-email:focus + .underline_email {
+    transform: scaleX(1);
+}
+
+/************************************************************************/
+
+button {
+    width: 300px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 24px;
+    padding-left: 60px;
+    border-radius: 16px;
+    background-color: #105AB2;
+    background-image: url('../images/send.svg');
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 20% center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0C3B73;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.textarea {
+    width: 70%;
+    height: 100px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    resize: none;
+    border-width: 3px;
+    border-color: #B4C5E4;
+    transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+    border-color: #105AB2;
+    box-shadow: 0 0 5px rgba(16, 90, 178, 0.5);
+}
+
+::placeholder{
+    color: #9ab5e9;
+}
+
+.textarea:focus::placeholder{
+    color: transparent;
+}

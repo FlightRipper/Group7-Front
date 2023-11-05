@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './adminlogin.css';
-import adminImage from './images/admin.svg';
+import adminImage from '../images/admin.svg';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');

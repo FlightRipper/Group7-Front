@@ -1,10 +1,14 @@
 import './App.css';
-import LoginForm from './components/adminlogin/adminlogin';
+// import LoginForm from './components/adminlogin/adminlogin';
+// import Navbar from './components/navbar/navbar';
+import Contactus from './components/contactus/contactus';
 
 function App() {
   return (
     <div className="App">
-      <LoginForm />
+       {/* <Navbar /> */}
+      {/* <LoginForm /> */}
+      <Contactus />
     </div>
   );
 }

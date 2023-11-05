@@ -1,6 +1,6 @@
 body{
     background-size: 100% 100%;
-    background-image: url('./images/adminBGlogin.png');
+    background-image: url('../images/adminBGlogin.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -13,7 +13,7 @@ body{
     border-radius: 10px;
     height: 40px;
     text-align: center;
-    background-image: url('./images/usernameicon.svg');
+    background-image: url('../images/usernameicon.svg');
     background-size: 35px;
     background-repeat: no-repeat;
     font-family: bold;
@@ -30,7 +30,7 @@ body{
     border-radius: 10px;
     height: 40px;
     text-align: center;
-    background-image: url('./images/lockicon.svg');
+    background-image: url('../images/lockicon.svg');
     background-repeat: no-repeat;
     background-size: 30px;
     width: 300px;
@@ -68,7 +68,6 @@ button:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     color: #ffffff;
 }
-
 
 h1{
     display: grid;
