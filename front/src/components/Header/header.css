@@ -2,8 +2,8 @@ header {
   background-color: var(--secondary-color);
   display: flex;
   width: auto;
-  padding: 10px 1120px 8px 156px;
-  align-items: center;
+  padding: 10px 150px 8px 156px;
+  justify-content: flex-end;
 }
 
 header .App-logo {
