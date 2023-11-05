@@ -1,0 +1,65 @@
+
+  /* Style the carousel container */
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: red;
+    margin-top: 10px;
+    height: 70vh;
+    /* max-height,width */
+  }
+  
+  /* Style the carousel slides */
+  .carousel-slide {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    /* padding: 0 300px; */
+    width: 80%;
+    background-color: #fff;
+    height: 70vh;
+  }
+  
+  .carousel-slide.active {
+    display: flex;
+  }
+  
+
+  /* Style the navigation buttons */
+  .prev-button,
+  .next-button {
+    background-color: #333; /* Set your desired button background color */
+    color: #fff; /* Set your desired button text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .next-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+
+    /* Style the carousel images for responsiveness */
+  /* .carousel-image {
+    max-width: 100%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+  } */
+
+  .carousel-image {
+    width: 800px;
+  }

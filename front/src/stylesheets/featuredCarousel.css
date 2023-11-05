@@ -1,0 +1,9 @@
+.carousel-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: 80%;
+    column-gap: 30px;
+}
