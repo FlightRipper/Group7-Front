@@ -1,0 +1,12 @@
+.koussa {
+  color: #105ab2;
+  border: 1px solid #105ab2;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.koussa:hover {
+  background-color: #105ab2;
+  color: white;
+}

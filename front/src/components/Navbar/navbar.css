@@ -25,7 +25,7 @@
 }
 
 .shop-text {
-  cursor: default;
+  cursor: pointer;
 }
 
 a,
@@ -51,13 +51,13 @@ a,
   margin: 0;
   padding: 0;
   border: 1px solid var(--secondary-color);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
 }
 
 .dropdown-menu li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  padding: 16px;
+  /* border-bottom: 1px solid #ccc; */
 }
 
 .menu-item a {
@@ -68,6 +68,10 @@ a,
 
 .dropdown-menu li:last-child {
   border-bottom: none;
+}
+
+.shop-link:hover .dropdown-menu {
+  display: block;
 }
 
 .isDropdownVisible .dropdown-menu {
