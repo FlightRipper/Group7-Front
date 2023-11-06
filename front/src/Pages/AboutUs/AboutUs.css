@@ -13,7 +13,7 @@
   align-content: center;
   align-self: center;
   color: white;
-  overflow: hidden; /* This ensures the image is clipped to the rounded corner */
+  overflow: hidden;
 }
 .about_us_details {
   display: grid;
@@ -31,7 +31,7 @@
   display: flex;
   position: relative;
   right: 8%;
-  top: 12.8%;
+  top: 11.7%;
   object-fit: contain;
   opacity: 0.4;
   border-radius: 30px;
