@@ -42,7 +42,7 @@ export default function SimpleSlider() {
       <Navbar />
       <div className="SingleProduct">
         <div className="SingleProduct_name">
-          <span>Galaxy Note 10+</span>
+          <span className="product_name">Galaxy Note 10+</span>
           <GoBack/>
         </div>
         <div className="carousel_container">
