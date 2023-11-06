@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.SingleProduct {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "left right";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.SingleProduct_name {
+  display: grid;
+  grid-area: header;
+  height: 5vh;
+  background: rgba(16, 90, 178, 0.5);
+  align-items: center;
+  color: #fff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.carousel_container,
+.desc {
+  width: 80vh;
+  justify-content: center;
+}
+
+span {
+  margin-left: 10%;
+}
+.carousel_container {
+  display: grid;
+  grid-area: left;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  margin-left: 15%;
+}
+
+.SingleProduct_name,
+.carousel_container {
+  padding-left: 10px;
+}
+.desc {
+  grid-area: right;
+  text-align: left;
+  margin-right: 200px;
+}
+
+.desc h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.desc li {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.desc li::before {
+  content: "•";
+  color: #105ab2;
+  margin-right: 8px;
+}
+
+.cimage {
+  width: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
