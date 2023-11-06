@@ -10,7 +10,7 @@ import Slider from "react-slick";
 import Header from "../../components/Header/header.jsx";
 import Navbar from "../../components/Navbar/navbar.jsx";
 import Footer from "../../components/Footer/footer.jsx";
-
+import GoBack from "../../components/GoBack/GoBack.js";
 export default function SimpleSlider() {
   const settings = {
     dots: true,
@@ -26,11 +26,13 @@ export default function SimpleSlider() {
       width: "20vw",
       height: "70vh",
       borderRadius: "30px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      alignContent: "center",
+      // display: "flex",
+      // alignItems: "center",
+      // justifyContent: "center",
+      // alignContent: "center",
       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+      background: "linear-gradient(154deg, #105AB2 38%, rgba(255, 255, 255, 0.00) 128.25%)"
+
     },
   };
 
@@ -41,11 +43,12 @@ export default function SimpleSlider() {
       <div className="SingleProduct">
         <div className="SingleProduct_name">
           <span>Galaxy Note 10+</span>
+          <GoBack/>
         </div>
         <div className="carousel_container">
           <Slider {...settings}>
             <div>
-              <img className="cimage" src={mouse} alt="mouse" />
+              <img className="cimage" height="500" src={mouse} alt="mouse" />
             </div>
             <div>
               <img className="cimage" src={phone1} alt="logo" />
