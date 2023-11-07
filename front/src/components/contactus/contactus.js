@@ -1,34 +1,64 @@
-import React, { useState } from 'react';
-// import { SMTPClient } from 'emailjs';
-import emailjs from "emailjs-com";
+import React, { useRef } from 'react';
+import emailjs from "@emailjs/browser";
 import './contactus.css';
+import emailpic from '../images/email.svg';
+import phonepic from '../images/phone.svg';
+import locpic from '../images/location.svg';
 
 const Contactus = () => {
-    function sendEmail(e){
-    e.preventDefault();
-    emailjs.sendForm('gmail', 'template_39j1pk6', e.current, 'SxdeFlZArqjSkFMpF')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-    e.target.reset()}
+  const form = useRef();
 
-    return (
-        <div className='ContactUs'>
-            <div className='Card'>
-                {/* <form onSubmit={sendEmail}> */}
-                    <input class="input-name" type="text" placeholder="Your name" name = "to_name"/>
-                    <span class="underline_name"></span>
-                    <input type="text" class="input-email" placeholder="Your email" required="" name = "email"/>
-                    <label for="Email" class="underline_email"></label>
-                    <textarea className = "textarea" placeholder='Write a message' name = "message"/>
-                    <button type='submit'>Send message</button>
-                {/* </form> */}
-            </div>
-            <div className='Side'>
-            </div>
-        </div>
-    )
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_50xsf8d",
+        "template_39j1pk6",
+        form.current,
+        "SxdeFlZArqjSkFMpF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  return (
+      <div className='ContactUs'>
+          <div className='Side'>
+              <p className = 'ForDetails'>For More Details <br></br> Contact Us</p>
+              <div className = "info">
+                <div className= "EmailDiv">
+                  <img src = {emailpic} />
+                  <p className = "email">TechSpot@gmail.com</p>
+                </div>
+                <div className = "EmailDiv">
+                <img src = {phonepic} />
+                  <p className='phone'>+12345678</p>
+                </div>
+                <div className = "EmailDiv">
+                <img src = {locpic} />
+                  <p className = 'location'>Beirut-Downtown</p>
+                </div>
+              </div>
+          </div>
+          <div className='Card'>
+              <form ref={form} className='form-Contactus' onSubmit={sendEmail}>
+                  <input class="input-name" type="text" placeholder="Your name" name = "from_name"/>
+                  <span class="underline_name"></span>
+                  <input type="text" class="input-email" placeholder="Your email" required="" name = "from_email"/>
+                  <label for="Email" class="underline_email"></label>
+                  <textarea className = "textarea" placeholder='Write a message' name = "message"/>
+                  <button type='submit'>Send message</button>
+              </form>
+          </div>
+      </div>
+  )
 }
 export default Contactus

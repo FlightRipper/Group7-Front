@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './adminlogin.css';
 import adminImage from '../images/admin.svg';
 
-const LoginForm = () => {
+const Loginform = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -80,4 +80,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Loginform;
