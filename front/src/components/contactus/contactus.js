@@ -33,20 +33,20 @@ const Contactus = () => {
       <div className='ContactUs'>
           <div className='Side'>
               <p className = 'ForDetails'>For More Details <br></br> Contact Us</p>
-              <div className = "info">
-                <div className= "EmailDiv">
-                  <img src = {emailpic} />
-                  <p className = "email">TechSpot@gmail.com</p>
+                <div className = "info">
+                    <div className= "EmailDiv">
+                    <img src = {emailpic} />
+                    <p className = "email">TechSpot@gmail.com</p>
+                    </div>
+                    <div className = "EmailDiv">
+                    <img src = {phonepic} />
+                    <p className='phone'>+12345678</p>
+                    </div>
+                    <div className = "EmailDiv">
+                    <img src = {locpic} />
+                    <p className = 'location'>Beirut-Downtown</p>
+                    </div>
                 </div>
-                <div className = "EmailDiv">
-                <img src = {phonepic} />
-                  <p className='phone'>+12345678</p>
-                </div>
-                <div className = "EmailDiv">
-                <img src = {locpic} />
-                  <p className = 'location'>Beirut-Downtown</p>
-                </div>
-              </div>
           </div>
           <div className='Card'>
               <form ref={form} className='form-Contactus' onSubmit={sendEmail}>
