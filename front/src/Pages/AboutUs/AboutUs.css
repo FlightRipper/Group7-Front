@@ -60,3 +60,24 @@
   height: 80vh;
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .about_us_container {
+    width: 90vw; /* Adjust the width for smaller screens */
+    height: auto; /* Allow the container's height to adjust based on content */
+  }
+
+  .about_us_details {
+    width: 90%; /* Expand the details to take up more width on smaller screens */
+  }
+
+  .logos {
+    width: 30px; /* Set a smaller width for smaller screens */
+    height: auto; /* Preserve aspect ratio */
+    display: none;
+  }
+
+  .image {
+    display: none;
+  }
+}

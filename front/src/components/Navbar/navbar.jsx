@@ -187,6 +187,11 @@ const Navbar = () => {
                   Laptop Accessories
                 </Link>
               </li>
+              <li className="menu-item">
+                <Link to="/products" activeClassName="active-link">
+                  View All Products
+                </Link>
+              </li>
             </ul>
           )}
         </li>

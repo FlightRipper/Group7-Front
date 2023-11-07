@@ -1,0 +1,11 @@
+.products-by-category {
+  background-color: #b4c5e4;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns in a row */
+  gap: 2%; /* Adjust the gap between cards as needed */
+  justify-items: center; /* Center the cards horizontally */
+}

@@ -354,7 +354,7 @@ export default function SingleProduct() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     prevArrow: <img className="arrow1" src={leftArrow} alt="Left Arrow" />,
     nextArrow: <img className="arrow1" src={rightArrow} alt="Right Arrow" />,
     style: {

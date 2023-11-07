@@ -35,20 +35,25 @@ const ProductsByCategory = (props) => {
     <>
       <Header />
       <Navbar />
-      {products.length > 0 ? (
-        products.map((product) => (
-          <Card
-            key={product.id}
-            image={`http://localhost:4000/${product.imagePath[0]}`}
-            name={product.name}
-            price={product.price}
-            description={product.description}
-            productId={product._id}
-          />
-        ))
-      ) : (
-        <p>No products found in the {categoryName} category.</p>
-      )}
+      <div className="products-by-category">
+        <div className="category-name-filter">{categoryName}</div>
+        <div className="card-container">
+          {products.length > 0 ? (
+            products.map((product) => (
+              <Card
+                key={product.id}
+                image={`http://localhost:4000/${product.imagePath[0]}`}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+                productId={product._id}
+              />
+            ))
+          ) : (
+            <p>No products found in the {categoryName} category.</p>
+          )}
+        </div>
+      </div>
       <Footer />
     </>
   );
