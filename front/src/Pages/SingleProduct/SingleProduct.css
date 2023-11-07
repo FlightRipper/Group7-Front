@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .SingleProduct {
   display: grid;
   grid-template-areas:
@@ -17,7 +12,7 @@
 .SingleProduct_name {
   display: grid;
   grid-area: header;
-  height: 5vh;
+  height: 4vh;
   background: rgba(16, 90, 178, 0.5);
   align-items: center;
   color: #fff;
@@ -33,8 +28,8 @@
   justify-content: center;
 }
 
-span {
-  margin-left: 10%;
+.product_name {
+  margin-left: 14%;
 }
 .carousel_container {
   display: grid;
@@ -79,8 +74,16 @@ form {
   margin-right: 8px;
 }
 
+.label {
+  font-weight: bold; /* Example styling, you can customize it as needed */
+  color: #333; /* Example color */
+  /* Add other styles like font-size, margin, padding, etc. */
+}
+
 .cimage {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   margin: 50% auto;
+
+  z-index: 99999999999;
 }
