@@ -78,7 +78,6 @@
 //   //   setIsDropdownVisible(false);
 //   // };
 
-
 //   return (
 //     <nav className="App-navbar">
 //       <img className="techspot-logo" src={TechSpot} alt="website-logo" />
@@ -133,7 +132,7 @@ import React, { useState } from "react";
 import arrow from "../../Assets/Logo/arrow.svg";
 import TechSpot from "../../Assets/Images/TechSpot-logo.png";
 import "./navbar.css";
-import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -151,41 +150,60 @@ const Navbar = () => {
       <img className="techspot-logo" src={TechSpot} alt="website-logo" />
       <ul className="nav-list">
         <li className="nav-item">
-          <NavLink to='/' activeClassName="active-link">Home</NavLink>
+          <Link to="/" activeClassName="active-link">
+            Home
+          </Link>
         </li>
         <li className="nav-item">
-          <div
-            className="shop-link"
-            onMouseEnter={toggleDropdown}
-          >
+          <div className="shop-link" onMouseEnter={toggleDropdown}>
             <span className="shop-text">Shop</span>
             <img src={arrow} alt="arrow" className="arrow-logo" />
           </div>
           {isDropdownVisible && (
             <ul className="dropdown-menu" onMouseLeave={closeDropdown}>
               <li className="menu-item">
-                <NavLink to="/Phones" activeClassName="active-link">Phones</NavLink>
+                <Link to="/products/phones" activeClassName="active-link">
+                  Phones
+                </Link>
               </li>
               <li className="menu-item">
-                <NavLink to="/Laptops" activeClassName="active-link">Laptops</NavLink>
+                <Link to="/products/laptops" activeClassName="active-link">
+                  Laptops
+                </Link>
               </li>
               <li className="menu-item">
-                <NavLink to="/Phone Accessories" activeClassName="active-link">Phone Accessories</NavLink>
+                <Link
+                  to="/products/phone-accessories"
+                  activeClassName="active-link"
+                >
+                  Phone Accessories
+                </Link>
               </li>
               <li className="menu-item">
-                <NavLink to="/Laptop Accessories" activeClassName="active-link">Laptop Accessories</NavLink>
+                <Link
+                  to="/products/laptop-accessories"
+                  activeClassName="active-link"
+                >
+                  Laptop Accessories
+                </Link>
               </li>
             </ul>
           )}
         </li>
         <li className="nav-item">
-          <NavLink to="/blogs" activeClassName="active-link">Blog</NavLink>
+          <Link to="/blogs" activeClassName="active-link">
+            Blog
+          </Link>
         </li>
         <li className="nav-item">
-          <NavLink to="/contact" activeClassName="active-link">Contact Us</NavLink>
+          <Link to="/contact" activeClassName="active-link">
+            Contact Us
+          </Link>
         </li>
         <li className="nav-item">
-          <NavLink to="/about" activeClassName="active-link">About Us</NavLink>
+          <Link to="/about" activeClassName="active-link">
+            About Us
+          </Link>
         </li>
       </ul>
     </nav>
@@ -193,5 +211,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

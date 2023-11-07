@@ -10,3 +10,21 @@ header .App-logo {
   width: 60px;
   height: 12px;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 375px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .App-logo {
+    width: 40px;
+    height: 20px;
+  }
+}

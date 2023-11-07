@@ -1,12 +1,19 @@
-.koussa {
+.gb_button {
   color: #105ab2;
   border: 1px solid #105ab2;
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin: 20px;
+  z-index: 9999;
 }
 
-.koussa:hover {
+.gb_button:hover {
   background-color: #105ab2;
   color: white;
 }

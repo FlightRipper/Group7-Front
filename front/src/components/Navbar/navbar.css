@@ -84,3 +84,9 @@ a,
   height: 37px;
   left: 170px;
 }
+
+@media screen and (max-width: 768px) {
+  .techspot-logo {
+    display: none;
+  }
+}

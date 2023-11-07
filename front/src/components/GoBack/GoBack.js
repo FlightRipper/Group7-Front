@@ -8,8 +8,8 @@ const GoBack = () => {
 
   return (
     <div>
-      <button className="koussa" onClick={handleGoBack}>
-        Go Back
+      <button className="gb_button" onClick={handleGoBack}>
+        <span className="gb_text">Go Back</span>
       </button>
     </div>
   );

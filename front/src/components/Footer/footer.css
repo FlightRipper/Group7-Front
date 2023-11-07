@@ -13,3 +13,17 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .App-Footer {
+    position: relative; /* Change position to "relative" to push the footer down in the normal flow */
+    height: 2.5%; /* Allow the height to adjust based on content */
+    padding: 20px 0; /* Add padding for spacing */
+  }
+
+  footer p {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+  }
+}
