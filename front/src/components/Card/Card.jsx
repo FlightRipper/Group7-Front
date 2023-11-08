@@ -26,24 +26,24 @@ import "./Card.css";
 
 const Card = ({ image, name, price, description, productId, cardsPerRow }) => {
   return (
-    <div className="card">
-      <div key={productId} className="card-img">
-        <div className="img">
+    <div className="card-abc">
+      <div key={productId} className="card-img-abc">
+        <div className="img-abc">
           <img src={image} alt={name} />
         </div>
       </div>
-      <div className="card-title">{name}</div>
-      <div className="card-subtitle">{description}</div>
-      <hr className="card-divider" />
-      <div className="card-footer">
-        <div className="card-price">
-          <span className="card-price-sign">$</span> {price}
+      <div className="card-title-abc">{name}</div>
+      <div className="card-subtitle-abc">{description}</div>
+      <hr className="card-divider-abc" />
+      <div className="card-footer-abc">
+        <div className="card-price-abc">
+          <span className="card-price-sign-abc">$</span> {price}
         </div>
       </div>
 
-      <div className="button-container">
+      <div className="button-container-abc">
         <Link to={`/product/${productId}`}>
-          <button className="button2">View More</button>
+          <button className="button2-abc">View More</button>
         </Link>
       </div>
     </div>

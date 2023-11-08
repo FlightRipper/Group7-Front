@@ -8,21 +8,21 @@ import "../Header/header.css";
 
 const Header = () => {
   return (
-    <header className="App-header">
+    <header className="app-header-abc">
       <a href="https://www.facebook.com">
-        <img src={facebook} className="App-logo" alt="facebook-logo" />
+        <img src={facebook} className="app-logo-abc" alt="facebook-logo" />
       </a>
       <a href="https://www.twitter.com">
-        <img src={x} className="App-logo" alt="x-logo" />
+        <img src={x} className="app-logo-abc" alt="x-logo" />
       </a>
       <a href="https://www.instagram.com">
-        <img src={instagram} className="App-logo" alt="instagram-logo" />
+        <img src={instagram} className="app-logo-abc" alt="instagram-logo" />
       </a>
       <a href="https://www.gmail.com">
-        <img src={google} className="App-logo" alt="google-logo" />
+        <img src={google} className="app-logo-abc" alt="google-logo" />
       </a>
       <a href="https://www.linkedin.com">
-        <img src={linkedin} className="App-logo" alt="linkedin-logo" />
+        <img src={linkedin} className="app-logo-abc" alt="linkedin-logo" />
       </a>
     </header>
   );

@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 
-.App-navbar {
+.App-navbar-abc {
   display: inline-flex;
   align-items: center;
   height: 80px;
@@ -14,22 +14,23 @@
   gap: 100px;
 }
 
-.nav-list {
+.nav-list-abc {
   list-style: none;
   margin: auto;
   display: flex;
 }
 
-.nav-item {
+.nav-item-abc {
   margin-left: 100px;
 }
 
-.shop-text {
+.shop-text-abc {
   cursor: pointer;
 }
 
-a,
-.shop-link {
+.nav-item-abc a,
+.menu-item-abc a,
+.shop-link-abc {
   color: var(--primary-color);
   text-decoration: none;
   font-weight: bold;
@@ -38,13 +39,13 @@ a,
   flex-direction: row;
 }
 
-.arrow-logo {
+.arrow-logo-abc {
   cursor: pointer;
   margin-left: 5px;
   display: flex;
 }
 
-.dropdown-menu {
+.dropdown-menu-abc {
   position: absolute;
   background-color: #fff;
   list-style: none;
@@ -55,30 +56,30 @@ a,
   font-weight: normal;
 }
 
-.dropdown-menu li {
+.dropdown-menu-abc li {
   padding: 16px;
   /* border-bottom: 1px solid #ccc; */
 }
 
-.menu-item a {
+.menu-item-abc a {
   color: var(--primary-color);
   font-size: 16px;
   font-weight: normal;
 }
 
-.dropdown-menu li:last-child {
+.dropdown-menu-abc li:last-child {
   border-bottom: none;
 }
 
-.shop-link:hover .dropdown-menu {
+.shop-link-abc:hover .dropdown-menu-abc {
   display: block;
 }
 
-.isDropdownVisible .dropdown-menu {
+.isDropdownVisible .dropdown-menu-abc {
   display: block;
 }
 
-.techspot-logo {
+.techspot-logo-abc {
   position: absolute;
   width: 257px;
   height: 37px;

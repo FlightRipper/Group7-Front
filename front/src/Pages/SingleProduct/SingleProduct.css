@@ -21,8 +21,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  position: flex;
-  justify-content: center;
+  display: flex;
+  /* justify-content: center; */
 }
 
 .carousel_container,
@@ -87,5 +87,5 @@
 .cimage {
   max-width: 100%;
   height: auto;
-  margin: 50% auto;
+  margin: 40% auto;
 }

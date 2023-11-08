@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/navbar";
 import Footer from "../../components/Footer/footer";
 import Card from "../../components/Card/Card";
 import "./AllProducts.css";
-// import { useParams } from "react-router-dom";
+import Loading from "../../components/Loading/Loading";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
@@ -30,9 +30,9 @@ const AllProducts = () => {
     <>
       <Header />
       <Navbar />
-      <div className="haha">
-        <div className="allproduct-name">All Products</div>
-        <div className="card-container">
+      <div className="allproduct-container-abc">
+        <div className="allproduct-name-abc">ALL PRODUCTS</div>
+        <div className="card-container-abc1">
           {products.length > 0 ? (
             products.map((product) => (
               <Card
@@ -45,7 +45,7 @@ const AllProducts = () => {
               />
             ))
           ) : (
-            <p>No products found!</p>
+            <Loading/>
           )}
         </div>
       </div>

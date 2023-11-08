@@ -8,14 +8,14 @@ import AlertLogo from "../../Assets/Logo/alert.svg"
 
 const NotFound = () => {
   return (
-    <div className="notfound_container">
+    <div className="notfound_container-abc">
       <Header />
       <Navbar />
-      <div className="pnf">
-        <img className="pnf-logo" src={AlertLogo} alt="alert-logo"/>
-        <h1 className="pnf-title">404</h1>
-        <h2 className="pnf-desc">Page Not Found</h2>
-        <Link to="/" className="pnf-btn">
+      <div className="pnf-abc">
+        <img className="pnf-logo-abc" src={AlertLogo} alt="alert-logo"/>
+        <h1 className="pnf-title-abc">404</h1>
+        <h2 className="pnf-desc-abc">Page Not Found</h2>
+        <Link to="/" className="pnf-btn-abc">
           Go Back
         </Link>
       </div>

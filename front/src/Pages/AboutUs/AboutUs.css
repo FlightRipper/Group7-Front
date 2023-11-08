@@ -1,9 +1,9 @@
-.about_us {
+.about_us-abc {
   display: flex;
   flex-direction: column;
 }
 
-.about_us_container {
+.about_us_container-abc {
   width: 84vw;
   height: 80vh;
   flex-shrink: 0;
@@ -16,7 +16,7 @@
   overflow: hidden;
   margin-bottom: 32px;
 }
-.about_us_details {
+.about_us_details-abc {
   display: grid;
   align-content: flex-start;
   align-items: flex-start;
@@ -24,11 +24,11 @@
   margin-top: 3%;
   width: 40%;
 }
-.about_title {
+.about_title-abc {
   padding: 10px;
 }
 
-.image {
+.image-abc {
   display: flex;
   position: relative;
   right: 8%;
@@ -38,7 +38,7 @@
   border-radius: 30px;
 }
 
-.logos {
+.logos-abc {
   display: flex;
   align-items: center;
   align-self: center;
@@ -47,15 +47,16 @@
   margin-top: 6%;
 }
 
-.logos a {
+.logos-abc a {
   text-decoration: none;
 }
 
-.App_logo {
+.App_logo-abc img {
   height: auto;
+
 }
 
-.image {
+.image-abc {
   position: absolute;
   width: 42w;
   height: 80vh;
@@ -63,22 +64,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .about_us_container {
+  .about_us_container-abc {
     width: 90vw; /* Adjust the width for smaller screens */
     height: auto; /* Allow the container's height to adjust based on content */
   }
 
-  .about_us_details {
+  .about_us_details-abc {
     width: 90%; /* Expand the details to take up more width on smaller screens */
   }
 
-  .logos {
+  .logos-abc {
     width: 30px; /* Set a smaller width for smaller screens */
     height: auto; /* Preserve aspect ratio */
     display: none;
   }
 
-  .image {
+  .image-abc {
     display: none;
   }
 }

@@ -1,4 +1,4 @@
-.pnf {
+.pnf-abc {
   display: flex;
   min-height: 65vh;
   flex-direction: column;
@@ -8,19 +8,19 @@
   margin: 86.5px;
 }
 
-.pnf-title {
+.pnf-title-abc {
   font-size: 100px;
   font-weight: 700;
   align-self: center;
   margin-top: 30px;
 }
 
-.pnf-desc {
+.pnf-desc-abc {
   font-weight: 600;
   align-self: center;
 }
 
-.pnf-btn {
+.pnf-btn-abc {
   color: #105ab2;
   border: 1px solid #105ab2;
   text-decoration: none;
@@ -29,7 +29,7 @@
   border-radius: 8px;
 }
 
-.pnf-btn:hover {
+.pnf-btn-abc:hover {
   background-color: #105ab2;
   color: white;
 }

@@ -5,6 +5,7 @@ import Footer from "../../components/Footer/footer";
 import Card from "../../components/Card/Card";
 import "./ProductsByCategory.css";
 import { useParams } from "react-router-dom";
+import Loading from "../../components/Loading/Loading"
 
 const ProductsByCategory = (props) => {
   const { categoryName } = useParams();
@@ -37,10 +38,10 @@ const ProductsByCategory = (props) => {
     <>
       <Header />
       <Navbar />
-      <div className="products-by-category">
-        <div className="category-name-filter">{upperCategoryName}</div>
+      <div className="products-by-category-abc">
+        <div className="category-name-filter-abc">{upperCategoryName}</div>
 
-        <div className="card-container">
+        <div className="card-container-abc2">
           {products.length > 0 ? (
             products.map((product) => (
               <Card
@@ -53,7 +54,7 @@ const ProductsByCategory = (props) => {
               />
             ))
           ) : (
-            <p>No products found in the {categoryName} category.</p>
+           <Loading backgroundColor="#2f5a8e" textColor="white" />
           )}
         </div>
       </div>
@@ -63,3 +64,4 @@ const ProductsByCategory = (props) => {
 };
 
 export default ProductsByCategory;
+

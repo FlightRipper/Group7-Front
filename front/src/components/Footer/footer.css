@@ -1,4 +1,4 @@
-.App-Footer {
+.app-footer-abc {
   /* position: fixed; */
   bottom: 0%;
   width: 100%;
@@ -10,19 +10,19 @@
   margin-bottom: 0;
 }
 
-.App-Footer p {
+.app-footer-abc p {
   justify-content: center;
   align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-  .App-Footer {
+  .app-footer-abc {
     position: relative;
     height: 2.5%;
     padding: 20px 0;
   }
 
-  .App-Footer p {
+  .app-footer-abc p {
     text-align: center;
     margin: 0;
     font-size: 14px;
