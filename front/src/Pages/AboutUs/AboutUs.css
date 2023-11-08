@@ -14,6 +14,7 @@
   align-self: center;
   color: white;
   overflow: hidden;
+  margin-bottom: 32px;
 }
 .about_us_details {
   display: grid;

@@ -24,7 +24,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Card = ({ image, name, price, description, productId }) => {
+const Card = ({ image, name, price, description, productId, cardsPerRow }) => {
   return (
     <div className="card">
       <div key={productId} className="card-img">

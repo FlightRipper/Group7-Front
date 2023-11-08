@@ -8,7 +8,9 @@ import { useParams } from "react-router-dom";
 
 const ProductsByCategory = (props) => {
   const { categoryName } = useParams();
-  const normalizedCategoryName = categoryName.toLowerCase().replace(/\s/g, "");
+  const normalizedCategoryName =
+    categoryName.toLowerCase(); /*.replace(/\s/g, "") */
+  const upperCategoryName = categoryName.toUpperCase();
 
   const [products, setProducts] = useState([]);
 
@@ -36,7 +38,8 @@ const ProductsByCategory = (props) => {
       <Header />
       <Navbar />
       <div className="products-by-category">
-        <div className="category-name-filter">{categoryName}</div>
+        <div className="category-name-filter">{upperCategoryName}</div>
+
         <div className="card-container">
           {products.length > 0 ? (
             products.map((product) => (

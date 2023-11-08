@@ -7,11 +7,12 @@
   grid-template-rows: 1fr;
   gap: 20px;
   justify-content: center;
+  min-height: 75vh;
 }
 
 .SingleProduct_name {
-  display: grid;
-  grid-area: header;
+  /* display: grid;
+  grid-area: header; */
   height: 4vh;
   background: rgba(16, 90, 178, 0.5);
   align-items: center;
@@ -20,12 +21,15 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  position: flex;
+  justify-content: center;
 }
 
 .carousel_container,
-.desc {
+.SingleProduct_desc {
   width: 80vh;
   justify-content: center;
+  margin-bottom: 68px;
 }
 
 .product_name {
@@ -44,31 +48,31 @@
 .carousel_container {
   padding-left: 10px;
 }
-.desc {
+.SingleProduct_desc {
   grid-area: right;
   text-align: left;
   margin-right: 300px;
 }
 
-.desc h3 {
+.SingleProduct_desc h3 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-form {
+.SingleProduct_form {
   display: flex;
   text-align: left;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.desc li {
+.SingleProduct_desc li {
   list-style: none;
   margin-bottom: 40px;
 }
 
-.desc li::before {
+.SingleProduct_desc li::before {
   content: "•";
   color: #105ab2;
   margin-right: 8px;

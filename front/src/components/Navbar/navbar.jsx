@@ -173,7 +173,7 @@ const Navbar = () => {
               </li>
               <li className="menu-item">
                 <Link
-                  to="/products/phone-accessories"
+                  to="/products/phone accessories"
                   activeClassName="active-link"
                 >
                   Phone Accessories
@@ -181,7 +181,7 @@ const Navbar = () => {
               </li>
               <li className="menu-item">
                 <Link
-                  to="/products/laptop-accessories"
+                  to="/products/laptop accessories"
                   activeClassName="active-link"
                 >
                   Laptop Accessories

@@ -6,7 +6,7 @@ import Card from "../../components/Card/Card";
 import "./AllProducts.css";
 // import { useParams } from "react-router-dom";
 
-const AllProducts = (props) => {
+const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -30,21 +30,24 @@ const AllProducts = (props) => {
     <>
       <Header />
       <Navbar />
-      <div className="card-container">
-        {products.length > 0 ? (
-          products.map((product) => (
-            <Card
-              key={product.id}
-              image={`http://localhost:4000/${product.imagePath[0]}`}
-              name={product.name}
-              price={product.price}
-              description={product.description}
-              productId={product._id}
-            />
-          ))
-        ) : (
-          <p>No products found!</p>
-        )}
+      <div className="haha">
+        <div className="allproduct-name">All Products</div>
+        <div className="card-container">
+          {products.length > 0 ? (
+            products.map((product) => (
+              <Card
+                key={product.id}
+                image={`http://localhost:4000/${product.imagePath[0]}`}
+                name={product.name}
+                price={product.price}
+                description={product.description}
+                productId={product._id}
+              />
+            ))
+          ) : (
+            <p>No products found!</p>
+          )}
+        </div>
       </div>
       <Footer />
     </>
