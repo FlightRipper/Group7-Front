@@ -4,16 +4,10 @@
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
-  /* display: flex; */
   position: absolute;
-  /* justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-end;
-  justify-self: flex-end; */
-  /* margin: 20px; */
   z-index: 10;
   left: 2%;
-  top: 17.7%
+  top: 17.7%;
 }
 
 .gb_button:hover {

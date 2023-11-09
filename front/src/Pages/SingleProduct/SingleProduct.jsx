@@ -12,341 +12,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading.jsx";
 
-// export default function SingleProduct() {
-//   const { productId } = useParams();
-//   console.log(productId);
-//   const [product, setProduct] = useState(null);
-
-//   useEffect(() => {
-//     const fetchProduct = async () => {
-//       try {
-//         const response = await fetch(
-//           `http://localhost:4000/api/products/${productId}`
-//         );
-//         if (!response.ok) {
-//           throw new Error("Network response was not ok");
-//         }
-//         const data = await response.json();
-//         setProduct(data);
-//       } catch (error) {
-//         console.error("Error fetching product:", error);
-//         setProduct(null);
-//       }
-//     };
-
-//     fetchProduct();
-//   }, [productId]);
-
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     prevArrow: <img className="arrow1" src={leftArrow} alt="Left Arrow" />,
-//     nextArrow: <img className="arrow1" src={rightArrow} alt="Right Arrow" />,
-//     style: {
-//       width: "20vw",
-//       height: "70vh",
-//       borderRadius: "30px",
-//       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-//       background:
-//         "linear-gradient(154deg, #105AB2 38%, rgba(255, 255, 255, 0.00) 128.25%)",
-//     },
-//   };
-
-//   return (
-//     <>
-//       <Header />
-//       <Navbar />
-//       <div className="SingleProduct_name">
-//         {product !== null && (
-//           <span className="product_name">{product.description}</span>
-//         )}
-//         <GoBack />
-//       </div>
-
-//       <div className="SingleProduct">
-//         <div className="carousel_container">
-//           {product !== null && (
-//             <Slider {...settings}>
-//               {product.imagePath.map((image, index) => (
-//                 <div key={index}>
-//                   <img
-//                     className="cimage"
-//                     src={"http://localhost:4000/" + image}
-//                     alt={`${index}`}
-//                   />
-//                 </div>
-//               ))}
-//             </Slider>
-//           )}
-//         </div>
-//         <div className="SingleProduct_desc">
-//           {product !== null && (
-//             <h3>
-//               $ <span>{product.price}</span>
-//             </h3>
-//           )}
-//           <form className="SingleProduct_form">
-//             <ul>
-//               {product !== null && (
-//                 <li>
-//                   <span className="label">Name: </span>
-//                   {product.name}
-//                 </li>
-//               )}
-//               {product !== null && (
-//                 <li>
-//                   <span className="label">Description: </span>{" "}
-//                   {product.description}
-//                 </li>
-//               )}
-
-//               {/* Laptop/Phone attributes */}
-//               {product !== null && product.attributes.operatingSystem && (
-//                 <li>
-//                   <span className="label">Operating System (OS): </span>
-//                   {product.attributes.operatingSystem}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.camera && (
-//                 <li>
-//                   <span className="label">Camera: </span>
-//                   {product.attributes.camera}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.display && (
-//                 <li>
-//                   <span className="label">Display: </span>{" "}
-//                   {product.attributes.display}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.battery && (
-//                 <li>
-//                   <span className="label">Battery: </span>
-//                   {product.attributes.battery}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.ram && (
-//                 <li>
-//                   <span className="label">RAM: </span>
-//                   {product.attributes.ram}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.cpu && (
-//                 <li>
-//                   <span className="label">CPU: </span>
-//                   {product.attributes.cpu}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.storage && (
-//                 <li>
-//                   <span className="label">Storage: </span>
-//                   {product.attributes.storage}
-//                 </li>
-//               )}
-//               {/* Accessories attributes */}
-//               {product !== null && product.attributes.accessoriesBrand && (
-//                 <li>
-//                   <span className="label">Brand: </span>{" "}
-//                   {product.attributes.accessoriesBrand}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.accessoriesType && (
-//                 <li>
-//                   <span className="label">Type: </span>
-//                   {product.attributes.accessoriesType}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.accessoriesColor && (
-//                 <li>
-//                   <span className="label">Color: </span>
-//                   {product.attributes.accessoriesColor}
-//                 </li>
-//               )}
-//             </ul>
-//           </form>
-//         </div>
-//       </div>
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default function SingleProduct() {
-//   const { productId } = useParams();
-//   const [product, setProduct] = useState(null);
-//   const [loading, setLoading] = useState(true); // Add loading state
-
-//   useEffect(() => {
-//     const fetchProduct = async () => {
-//       try {
-//         const response = await fetch(
-//           `http://localhost:4000/api/products/${productId}`
-//         );
-//         if (!response.ok) {
-//           throw new Error("Network response was not ok");
-//         }
-//         const data = await response.json();
-//         setProduct(data);
-//         setLoading(false); // Set loading to false once the data is fetched.
-//       } catch (error) {
-//         console.error("Error fetching product:", error);
-//         setProduct(null);
-//         setLoading(false); // Set loading to false in case of an error.
-//       }
-//     };
-
-//     fetchProduct();
-//   }, [productId]);
-
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     prevArrow: <img className="arrow1" src={leftArrow} alt="Left Arrow" />,
-//     nextArrow: <img className="arrow1" src={rightArrow} alt="Right Arrow" />,
-//     style: {
-//       width: "20vw",
-//       height: "70vh",
-//       borderRadius: "30px",
-//       boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-//       background:
-//         "linear-gradient(154deg, #105AB2 38%, rgba(255, 255, 255, 0.00) 128.25%)",
-//     },
-//   };
-
-//   return (
-//     <>
-//       <Header />
-//       <Navbar />
-      // <div className="SingleProduct_name">
-      //   {product !== null && (
-      //     <span className="product_name">{product.description}</span>
-      //   )}
-      //   <GoBack />
-      // </div>
-
-//       {loading ? (
-//         <Loading /> // Display the loading component when data is being fetched
-//       ) : (
-//         <div className="SingleProduct">
-//           <div className="carousel_container">
-//             {product !== null && (
-//               <Slider {...settings}>
-//                 {product.imagePath.map((image, index) => (
-//                   <div key={index}>
-//                     <img
-//                       className="cimage"
-//                       src={"http://localhost:4000/" + image}
-//                       alt={`${index}`}
-//                     />
-//                   </div>
-//                 ))}
-//               </Slider>
-//             )}
-//           </div>
-//           <div className="SingleProduct_desc">
-//             {product !== null && (
-//               <h3>
-//                 $ <span>{product.price}</span>
-//               </h3>
-//             )}
-// <form className="SingleProduct_form">
-//             <ul>
-//               {product !== null && (
-//                 <li>
-//                   <span className="label">Name: </span>
-//                   {product.name}
-//                 </li>
-//               )}
-//               {product !== null && (
-//                 <li>
-//                   <span className="label">Description: </span>{" "}
-//                   {product.description}
-//                 </li>
-//               )}
-
-//               {/* Laptop/Phone attributes */}
-//               {product !== null && product.attributes.operatingSystem && (
-//                 <li>
-//                   <span className="label">Operating System (OS): </span>
-//                   {product.attributes.operatingSystem}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.camera && (
-//                 <li>
-//                   <span className="label">Camera: </span>
-//                   {product.attributes.camera}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.display && (
-//                 <li>
-//                   <span className="label">Display: </span>{" "}
-//                   {product.attributes.display}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.battery && (
-//                 <li>
-//                   <span className="label">Battery: </span>
-//                   {product.attributes.battery}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.ram && (
-//                 <li>
-//                   <span className="label">RAM: </span>
-//                   {product.attributes.ram}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.cpu && (
-//                 <li>
-//                   <span className="label">CPU: </span>
-//                   {product.attributes.cpu}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.storage && (
-//                 <li>
-//                   <span className="label">Storage: </span>
-//                   {product.attributes.storage}
-//                 </li>
-//               )}
-//               {/* Accessories attributes */}
-//               {product !== null && product.attributes.accessoriesBrand && (
-//                 <li>
-//                   <span className="label">Brand: </span>{" "}
-//                   {product.attributes.accessoriesBrand}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.accessoriesType && (
-//                 <li>
-//                   <span className="label">Type: </span>
-//                   {product.attributes.accessoriesType}
-//                 </li>
-//               )}
-//               {product !== null && product.attributes.accessoriesColor && (
-//                 <li>
-//                   <span className="label">Color: </span>
-//                   {product.attributes.accessoriesColor}
-//                 </li>
-//               )}
-//             </ul>
-//           </form>
-//           </div>
-//         </div>
-//       )}
-//       <Footer />
-//     </>
-//   );
-// }
-
-///code
 export default function SingleProduct() {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
@@ -382,8 +47,10 @@ export default function SingleProduct() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    prevArrow: <img className="arrow1" src={leftArrow} alt="Left Arrow" />,
-    nextArrow: <img className="arrow1" src={rightArrow} alt="Right Arrow" />,
+    prevArrow: <img className="arrow1-abc" src={leftArrow} alt="Left Arrow" />,
+    nextArrow: (
+      <img className="arrow1-abc" src={rightArrow} alt="Right Arrow" />
+    ),
     style: {
       width: "20vw",
       height: "70vh",
@@ -402,20 +69,20 @@ export default function SingleProduct() {
         <Loading backgroundColor="white" textColor="#105ab2" />
       ) : (
         <>
-          <div className="SingleProduct_name">
+          <div className="SingleProduct_name-abc">
             {product !== null && (
-              <span className="product_name">{product.description}</span>
+              <span className="product_name-abc">{product.description}</span>
             )}
             <GoBack />
           </div>
-          <div className="SingleProduct">
-            <div className="carousel_container">
+          <div className="SingleProduct-abc">
+            <div className="carousel_container-abc">
               {product !== null && (
                 <Slider {...settings}>
                   {product.imagePath.map((image, index) => (
                     <div key={index}>
                       <img
-                        className="cimage"
+                        className="cimage-abc"
                         src={"http://localhost:4000/" + image}
                         alt={`${index}`}
                       />
@@ -424,23 +91,23 @@ export default function SingleProduct() {
                 </Slider>
               )}
             </div>
-            <div className="SingleProduct_desc">
+            <div className="SingleProduct_desc-abc">
               {product !== null && (
                 <h3>
                   $ <span>{product.price}</span>
                 </h3>
               )}
-              <form className="SingleProduct_form">
+              <form className="SingleProduct_form-abc">
                 <ul>
                   {product !== null && (
                     <li>
-                      <span className="label">Brand: </span>
+                      <span className="label-abc">Brand: </span>
                       {product.name}
                     </li>
                   )}
                   {product !== null && (
                     <li>
-                      <span className="label">Description: </span>{" "}
+                      <span className="label-abc">Description: </span>{" "}
                       {product.description}
                     </li>
                   )}
@@ -448,62 +115,62 @@ export default function SingleProduct() {
                   {/* Laptop/Phone attributes */}
                   {product !== null && product.attributes.operatingSystem && (
                     <li>
-                      <span className="label">Operating System (OS): </span>
+                      <span className="label-abc">Operating System (OS): </span>
                       {product.attributes.operatingSystem}
                     </li>
                   )}
                   {product !== null && product.attributes.camera && (
                     <li>
-                      <span className="label">Camera: </span>
+                      <span className="label-abc">Camera: </span>
                       {product.attributes.camera}
                     </li>
                   )}
                   {product !== null && product.attributes.display && (
                     <li>
-                      <span className="label">Display: </span>{" "}
+                      <span className="label-abc">Display: </span>{" "}
                       {product.attributes.display}
                     </li>
                   )}
                   {product !== null && product.attributes.battery && (
                     <li>
-                      <span className="label">Battery: </span>
+                      <span className="label-abc">Battery: </span>
                       {product.attributes.battery}
                     </li>
                   )}
                   {product !== null && product.attributes.ram && (
                     <li>
-                      <span className="label">RAM: </span>
+                      <span className="label-abc">RAM: </span>
                       {product.attributes.ram}
                     </li>
                   )}
                   {product !== null && product.attributes.cpu && (
                     <li>
-                      <span className="label">CPU: </span>
+                      <span className="label-abc">CPU: </span>
                       {product.attributes.cpu}
                     </li>
                   )}
                   {product !== null && product.attributes.storage && (
                     <li>
-                      <span className="label">Storage: </span>
+                      <span className="label-abc">Storage: </span>
                       {product.attributes.storage}
                     </li>
                   )}
                   {/* Accessories attributes */}
                   {/* {product !== null && product.attributes.accessoriesBrand && (
                     <li>
-                      <span className="label">Brand: </span>{" "}
+                      <span className="label-abc">Brand: </span>{" "}
                       {product.attributes.accessoriesBrand}
                     </li>
                   )} */}
                   {product !== null && product.attributes.accessoriesType && (
                     <li>
-                      <span className="label">Type: </span>
+                      <span className="label-abc">Type: </span>
                       {product.attributes.accessoriesType}
                     </li>
                   )}
                   {product !== null && product.attributes.accessoriesColor && (
                     <li>
-                      <span className="label">Color: </span>
+                      <span className="label-abc">Color: </span>
                       {product.attributes.accessoriesColor}
                     </li>
                   )}
@@ -514,7 +181,6 @@ export default function SingleProduct() {
         </>
       )}
       {!loading && <Footer />}
-
     </>
   );
 }

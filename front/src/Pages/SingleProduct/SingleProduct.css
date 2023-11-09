@@ -1,4 +1,4 @@
-.SingleProduct {
+.SingleProduct-abc {
   display: grid;
   grid-template-areas:
     "header header"
@@ -10,9 +10,7 @@
   min-height: 75vh;
 }
 
-.SingleProduct_name {
-  /* display: grid;
-  grid-area: header; */
+.SingleProduct_name-abc {
   height: 4vh;
   background: rgba(16, 90, 178, 0.5);
   align-items: center;
@@ -22,20 +20,19 @@
   font-weight: 700;
   line-height: normal;
   display: flex;
-  /* justify-content: center; */
 }
 
-.carousel_container,
-.SingleProduct_desc {
+.carousel_container-abc,
+.SingleProduct_desc-abc {
   width: 80vh;
   justify-content: center;
-  margin-bottom: 68px;
+  margin-bottom: 66px;
 }
 
-.product_name {
+.product_name-abc {
   margin-left: 14%;
 }
-.carousel_container {
+.carousel_container-abc {
   display: grid;
   grid-area: left;
   align-items: center;
@@ -44,47 +41,47 @@
   align-content: center;
 }
 
-.SingleProduct_name,
-.carousel_container {
+.SingleProduct_name-abc,
+.carousel_container-abc {
   padding-left: 10px;
 }
-.SingleProduct_desc {
+.SingleProduct_desc-abc {
   grid-area: right;
   text-align: left;
   margin-right: 300px;
 }
 
-.SingleProduct_desc h3 {
+.SingleProduct_desc-abc h3 {
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-.SingleProduct_form {
+.SingleProduct_form-abc {
   display: flex;
   text-align: left;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.SingleProduct_desc li {
+.SingleProduct_desc-abc li {
   list-style: none;
   margin-bottom: 40px;
 }
 
-.SingleProduct_desc li::before {
+.SingleProduct_desc-abc li::before {
   content: "•";
   color: #105ab2;
   margin-right: 8px;
 }
 
-.label {
-  font-weight: bold; /* Example styling, you can customize it as needed */
-  color: #333; /* Example color */
-  /* Add other styles like font-size, margin, padding, etc. */
+.label-abc {
+  font-weight: bold; 
+  color: #333; 
+ 
 }
 
-.cimage {
+.cimage-abc {
   max-width: 100%;
   height: auto;
   margin: 40% auto;

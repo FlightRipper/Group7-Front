@@ -8,7 +8,7 @@ import google from "../../Assets/Logo White/google.svg";
 import facebook from "../../Assets/Logo White/facebook.svg";
 import x from "../../Assets/Logo White/x.svg";
 import linkedin from "../../Assets/Logo White/linkedin.svg";
-import about from "../../Assets/Images/Image.png";
+import aboutbackground from "../../Assets/Images/Image.png";
 const AboutUs = () => {
   return (
     <>
@@ -48,7 +48,7 @@ const AboutUs = () => {
               our content and services.
             </p>
             <div className="image-abc">
-              <img src={about} alt="about_background" />
+              <img src={aboutbackground} alt="about_background" />
             </div>
           </div>
           <div className="about_us_details-abc logos-abc">

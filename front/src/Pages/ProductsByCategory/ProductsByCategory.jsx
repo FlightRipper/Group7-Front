@@ -5,16 +5,14 @@ import Footer from "../../components/Footer/footer";
 import Card from "../../components/Card/Card";
 import "./ProductsByCategory.css";
 import { useParams } from "react-router-dom";
-import Loading from "../../components/Loading/Loading"
+import Loading from "../../components/Loading/Loading";
 
 const ProductsByCategory = (props) => {
   const { categoryName } = useParams();
   const normalizedCategoryName =
     categoryName.toLowerCase(); /*.replace(/\s/g, "") */
   const upperCategoryName = categoryName.toUpperCase();
-
   const [products, setProducts] = useState([]);
-
   useEffect(() => {
     const fetchProductsByCategory = async () => {
       try {
@@ -33,14 +31,12 @@ const ProductsByCategory = (props) => {
     };
     fetchProductsByCategory();
   }, [normalizedCategoryName]);
-
   return (
     <>
       <Header />
       <Navbar />
       <div className="products-by-category-abc">
         <div className="category-name-filter-abc">{upperCategoryName}</div>
-
         <div className="card-container-abc2">
           {products.length > 0 ? (
             products.map((product) => (
@@ -54,7 +50,7 @@ const ProductsByCategory = (props) => {
               />
             ))
           ) : (
-           <Loading backgroundColor="#2f5a8e" textColor="white" />
+            <Loading backgroundColor="#2f5a8e" textColor="white" />
           )}
         </div>
       </div>
@@ -62,6 +58,4 @@ const ProductsByCategory = (props) => {
     </>
   );
 };
-
 export default ProductsByCategory;
-
