@@ -12,8 +12,24 @@
     width: 30%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .n-header {
+        height: 8vh;
+    }
+
+    .logo-images {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .n-header {
+        height: 6vh;
+    }
 }

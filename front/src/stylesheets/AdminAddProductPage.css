@@ -1,0 +1,151 @@
+.adminProductsAddView {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidenavbar-left {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 20%;
+
+    height: 100vh;
+}
+
+.adminProductsAddMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+    /* gap: 20px; */
+}
+
+.adminProductsAddMainHeader {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+}
+
+.add-Product {
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    background-color: aliceblue;
+    margin: 0 auto;
+    width: 85%;
+    height: 94vh;
+}
+
+.formUp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    height: 80vh;
+    justify-items: center;
+    margin-top: 20px;
+    /* width: 50%; */
+    /* margin: 0 20px; */
+    /* column-gap: 50px; */
+}
+
+.formUp label {
+    margin-right: 10px;
+}
+.formUp input{
+    border-radius: 12px;
+    display: flex;
+}
+
+.ProductKousa ,
+.ProductKousa-input{
+    margin-left: 50px;
+    /* font-size: 20px; */
+}
+
+.formUp input:focus::placeholder {
+    color: transparent;
+}
+
+.adminProductsAddView label {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.featured-class {
+    display: flex;
+    align-items: baseline;
+    margin-right: 122px;
+}
+
+
+.option-category {
+    /* width: 50px; */
+    padding: 5px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    margin-right: 90px;
+}
+
+.cyberpunk-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #30cfd0;
+    border-radius: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .cyberpunk-checkbox-label{
+
+  }
+  .cyberpunk-checkbox:before {
+    content: "";
+    background-color: #30cfd0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+
+  }
+  
+  .cyberpunk-checkbox:checked:before {
+    transform: translate(-50%, -50%) scale(1);
+    
+  }
+  
+  .cyberpunk-checkbox-label {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  .formDownDescription {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-description-1 .forminputs-add-Product{
+    display: flex;
+    flex-direction: column;
+  }

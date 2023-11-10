@@ -29,11 +29,11 @@ const Navbar = () => {
             <li><a href="#">ABOUT US</a></li>
           </ul>
           <div className="search-container">
-              <input type="text" placeholder="Search.." />
-              <button type="submit">
-                <FontAwesomeIcon icon={faSearch} className='search' />
-              </button>
-            
+            <input type="text" placeholder="Search.." />
+            <button type="submit">
+              <FontAwesomeIcon icon={faSearch} className='search' />
+            </button>
+
           </div>
         </div>
       </div>
