@@ -14,20 +14,25 @@
   height: 12px;
 }
 
-/* Media query for mobile devices */
-@media (max-width: 375px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
   .app-header-abc {
-    width: auto;
-    justify-content: space-around;
-    align-items: center;
+    height: 3.1vh;
   }
 
-  .app-header-abc .app-logo-abc {
-    width: 40px;
-    height: 20px;
+  .app-logo-abc {
+    width: 40px; /* Adjust the logo size for smaller screens */
+    height: 8px;
+  }
+}
+
+/* Responsive styles for even smaller screens */
+@media (max-width: 480px) {
+  .app-header-abc {
+    height: 3.1vh;
+  }
+  .app-logo-abc {
+    width: 30px; /* Further adjust the logo size for very small screens */
+    height: 6px;
   }
 }

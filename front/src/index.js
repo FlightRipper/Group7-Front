@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 
 import NotFound from "./Pages/NotFound/NotFound";
 import SingleProduct from "./Pages/SingleProduct/SingleProduct";
-// import SingleAccessory from "./Pages/SingleAccessory/SingleAccessory";
 import ProductsByCategory from "./Pages/ProductsByCategory/ProductsByCategory.jsx";
 import AllProducts from "./Pages/AllProducts/AllProducts.jsx";
 
@@ -19,10 +18,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           path="/products/:categoryName"
           element={<ProductsByCategory />}
         />
-        <Route path="/product/:productId" element={<SingleProduct />} />
-        {/* <Route path="/accessory/:productId" element={<SingleAccessory />} /> */}
+        <Route path="/product/:productId/" element={<SingleProduct />} />
         <Route path="/products" element={<AllProducts />} />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/*/*" element={<NotFound />} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
