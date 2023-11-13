@@ -1,11 +1,11 @@
 import React from 'react';
 import './Bottom.css';
-import bottomlogo from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/bottom-logo.png';
-import emaillogo from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/Email logo.svg';
-import fb from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/Facebook logo1.svg';
-import google from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/Google logo1.svg';
-import instagram from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/Instagram logo1.svg';
-import linkedin from '/home/alialahmad/Documents/GitHub/Group7-Front/front/src/assets/images/Linkedin logo1.svg';
+import bottomlogo from '../../../assets/images/bottom-logo.png';
+import emaillogo from '../../../assets/images/Email logo.svg';
+import fb from '../../../assets/images/Facebook logo1.svg';
+import google from '../../../assets/images/Google logo1.svg';
+import instagram from '../../../assets/images/Instagram logo1.svg';
+import linkedin from '../../../assets/images/Linkedin logo1.svg';
 import twitter from '../../../assets/images/X logo.svg';
 
 const Bottom = () => {

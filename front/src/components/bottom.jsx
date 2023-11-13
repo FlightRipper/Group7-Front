@@ -1,6 +1,6 @@
 import React from 'react';
 import '../stylesheets/bottom.css';
-import bottomlogo from '../assets/bottom-logo.png';
+import bottomlogo from '../../src/assets/images/bottom-logo.png';
 import emaillogo from '../assets/Email logo.svg';
 import fb from '../assets/Facebook logo1.svg';
 import google from '../assets/Google logo1.svg';
